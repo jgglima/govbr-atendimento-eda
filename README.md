@@ -1,8 +1,7 @@
-* Análise de Atendimentos da Conta Gov.br
-Projeto de Análise Exploratória de Dados (EDA) utilizando Python para investigar atendimentos da central de suporte da Conta Gov.br.
+Análise de Atendimentos da Conta Gov.br
 
 * Objetivo:
-Investigar os atendimentos de 2025, garantindo qualidade dos dados e consistência estatística dos indicadores que irão para o painel de monitoramento. Os indicadores são: 
+Investigar os atendimentos de 2025, garantindo qualidade dos dados e consistência estatística dos seguintes indicadores: 
 a) volume de solicitações; 
 b) tempo de atendimento.
 
@@ -51,17 +50,8 @@ Motivação:
 reduzir custo computacional
 acelerar análise exploratória
 manter representatividade estatística
-🗂 Estrutura do Dataset
-Coluna	Descrição
-solicitacao	Identificador do atendimento
-origem	Canal de origem
-categoriaSolucao	Categoria da solicitação
-datainicio	Data de criação
-atendimentoinicio	Início do atendimento
-encerramento	Data de encerramento
-grupo	Equipe responsável
-situacao	Status do atendimento
-⚙️ Stack Utilizada
+
+* Stack Utilizada
 Python
 Pandas
 NumPy
@@ -69,31 +59,26 @@ Matplotlib
 Seaborn
 Google BigQuery
 Jupyter Notebook
-🧹 Processo de Análise
 
+* Processo de Análise
 Etapas realizadas na análise:
 
 1️⃣ Inspeção inicial
 estrutura dos dados
 tipos de variáveis
 estatísticas descritivas
-2️⃣ Padronização de colunas
 
+2️⃣ Padronização de colunas
 Renomeação para camelCase para manter consistência no projeto.
 
 3️⃣ Tratamento de valores nulos
-
 Foi identificado valor nulo na coluna:
-
 categoriaSolucao
-
 Após investigação foi verificado que o registro tinha origem Chat Online.
-
 Correção aplicada:
-
 categoriaSolucao = "Chat Online > (N1)"
-4️⃣ Validação temporal
 
+4️⃣ Validação temporal
 Foram identificados registros com inconsistência:
 
 encerramento <= atendimentoinicio
