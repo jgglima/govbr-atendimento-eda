@@ -9,6 +9,7 @@ b) tempo de atendimento.
 https://dados.gov.br/dados/conjuntos-dados/atendimentos-realizados-na-central-de-atendimento-da-conta-govbr
 
 * Perguntas que orientaram a análise:
+
 Volume de solicitações
 1) Qual é a origem de 80% dos atendimentos?
 2) Qual é o turno com maior volume de entrada de solicitações?
