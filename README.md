@@ -1,5 +1,14 @@
 # Análise de Atendimentos da Conta Gov.br
+* Projeto desenvolvido como parte de portfólio de Análise de Dados.
+* Autor: Jorge Gabriel
 
+Foco em:
+* Estatística descritiva
+* Análise Exploratória
+* Validação de métricas para dashboards
+* Ingestão de dados por API
+* Simplificação de problemas
+  
 ## Objetivo:
 Disponibilizar os dados em cloud para ingestão mensal e investigar os atendimentos de 2025, garantindo qualidade dos dados e consistência estatística dos seguintes indicadores: 
 a) volume de solicitações; 
@@ -78,22 +87,11 @@ Etapas realizadas na análise:
 - Crítico: Acima da zona de tolerância
 7. Estatísticas descritivas e gráficos para extrair as informações que respondem cada pergunta de análise
 
-## Próximos Passos
-Possíveis extensões do projeto:
+## Possíveis extensões do projeto:
 
 * Dashboard de monitoramento de atendimentos
 * Análise de SLA de atendimento
 * Identificação de gargalos operacionais
 
-* Ferramenta sugerida:
-Looker Studio
-
-* Projeto desenvolvido como parte de portfólio de Análise de Dados.
-
-* Autor: Jorge Gabriel
-  
-Foco em:
-* Estatística descritiva
-* Análise Exploratória
-* Ingestão de dados por API
-* Validação de métricas para dashboards
+* Ferramentas sugeridas:
+BigQuery e Looker Studio
