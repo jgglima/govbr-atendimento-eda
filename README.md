@@ -60,6 +60,12 @@ Os valores extremos foram tratados como parte do comportamento do processo, send
 - Full Load em tabela particionada por mês
 - Amostragem aleatória (SQL)
 - Python (EDA)
+  
+### Objetivos do Pipeline
+- Reduzir custo de armazenamento e processamento com uso de Parquet
+- Permitir atualização mensal dos dados
+- Facilitar consultas analíticas em BigQuery
+- Separar etapa de ingestão da etapa de análise
 
 ## Amostragem
 - Volume de Dados
