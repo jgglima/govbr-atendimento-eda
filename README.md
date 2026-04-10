@@ -1,6 +1,7 @@
-# Análise de Atendimentos da Conta Gov.br
-* Projeto desenvolvido como parte de portfólio de Análise de Dados.
-* Autor: Jorge Gabriel
+# Análise Exploratória dos Atendimentos da Conta Gov.br (2025)
+Investigação estatística do volume de solicitações e da distribuição do tempo de atendimento a partir de dados públicos da central Gov.br.
+
+Autor: Jorge Gabriel
 
 Foco em:
 * Estatística descritiva
