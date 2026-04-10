@@ -37,6 +37,11 @@ de rejeições e atendimentos encerrados sem aceitação.
 Os valores extremos foram tratados como parte do comportamento do processo, sendo analisados separadamente como atendimentos de alta duração. Utilizei medidas estatísticas como mediana e percentis para melhor representação da distribuição.
 * Os meses de agosto e do último trimestre apresentaram aumento significativo na mediana de duração dos atendimentos e na quantidade de outliers.
 * 50% dos atendimentos são > 0 dias 00:13:10 <= 2 days 15:56:45. 1% dos atendimentos duraram mais 6 dias 15:32:07.
+* A duração dos atendimentos teves picos em março e agosto, podendo ser instabilidade operacional, ou programa de governo que atraiu demanda fora do comum para a plataforma. Verificamos dia a dia neste mês. Entre os dias 9 e 16 de agosto o tempo de duração dos atendimentos subiu drasticamente. O atendimento que atingiu o tempo máximo nesse mês começou em 10/08/2025 e durou 524h.
+* Para o último trimestre o aumento ocorreu progressivamente. É válido detalhar em outros projetos se esse aumento está correlacionado a pagamentos de benefícios no final do ano, acesso a informações sobre 13º salário, regularização de pendências de documentos, entre outros serviços que os usuários possam buscar no final do ano.
+* Uma descoberta interessante foi o fato das durações dos atendimentos de solicitações encerradas como aceitas e das rejeitadas seguiram padrões semelhantes durante todo o ano.
+* Analisando por turnos, os atendimentos iniciados à noite têm maiores durações que os demais.
+* Os finais de semana têm maior mediana de duração de atendimento, sendo acima de 10h, com ênfase para os atendimentos iniciados aos Domingos, quando atingem 25h de duração mediana. 
 
 ## Pipeline:
 - Download CSV mensal
@@ -59,7 +64,7 @@ Reduzir custo computacional e acelerar análise exploratória, mantendo represen
 ### Google Cloud
 - Google BigQuery, Google Cloud API 
 
- Processo de Análise
+## Processo de Análise
 Etapas realizadas na análise:
 1. Descrição dos dados e verificação de types
 2. Padronização de nomes das variáveis em camelCase
@@ -73,72 +78,22 @@ Etapas realizadas na análise:
 - Crítico: Acima da zona de tolerância
 7. Estatísticas descritivas e gráficos para extrair as informações que respondem cada pergunta de análise
 
-2️⃣ Padronização de colunas
-Renomeação para camelCase para manter consistência no projeto.
-
-3️⃣ Tratamento de valores nulos
-Foi identificado valor nulo na coluna:
-categoriaSolucao
-Após investigação foi verificado que o registro tinha origem Chat Online.
-Correção aplicada:
-categoriaSolucao = "Chat Online > (N1)"
-
-4️⃣ Validação temporal
-Foram identificados registros com inconsistência:
-
-encerramento <= atendimentoinicio
-
-Esse tipo de validação é importante para evitar métricas de tempo negativas ou inválidas.
-
-📊 Métricas Criadas
-Tempo de atendimento
-tempoAtendimento = encerramento - atendimentoinicio
-
-Essa métrica permite calcular:
-
-tempo médio de atendimento
-distribuição de tempos
-identificação de outliers
-📈 Principais Análises
-
-Durante a EDA foram analisados:
-
-Volume de solicitações
-por canal de origem
-por categoria
-por período
-Tempo de atendimento
-média
-mediana
-distribuição
-presença de outliers
-🔎 Objetivo da EDA
-
-Garantir que os dados utilizados para análise:
-
-✔ possuem consistência temporal
-✔ possuem categorias válidas
-✔ possuem valores completos
-✔ permitem geração de métricas confiáveis
-
-🚀 Próximos Passos
-
+## Próximos Passos
 Possíveis extensões do projeto:
 
-Dashboard de monitoramento de atendimentos
-Análise de SLA de atendimento
-Identificação de gargalos operacionais
-Análise de volume por canal de atendimento
+* Dashboard de monitoramento de atendimentos
+* Análise de SLA de atendimento
+* Identificação de gargalos operacionais
 
-Ferramenta sugerida:
-
+* Ferramenta sugerida:
 Looker Studio
-👤 Autor
 
-Projeto desenvolvido como parte de portfólio de Análise de Dados.
+* Projeto desenvolvido como parte de portfólio de Análise de Dados.
 
+* Autor: Jorge Gabriel
+  
 Foco em:
-
-Data Quality
-Análise Exploratória
-Preparação de dados para dashboards
+* Estatística descritiva
+* Análise Exploratória
+* Ingestão de dados por API
+* Validação de métricas para dashboards
