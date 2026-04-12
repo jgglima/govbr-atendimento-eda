@@ -25,7 +25,7 @@ b) tempo de atendimento.
 - Construção de pipeline de dados (API → BigQuery)
 - Otimização de processamento com Parquet
 - Simplificação de problemas analíticos
-- 
+  
 ## Fonte dos dados:
 https://dados.gov.br/dados/conjuntos-dados/atendimentos-realizados-na-central-de-atendimento-da-conta-govbr
 
