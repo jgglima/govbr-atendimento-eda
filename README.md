@@ -13,12 +13,13 @@ Principais resultados:
 Tecnologias: Python, BigQuery, SQL
 Autor: Jorge Gabriel
 
-Foco em:
-* Estatística descritiva
-* Análise Exploratória
-* Validação de métricas para dashboards
-* Ingestão de dados por API
-* Simplificação de problemas
+## Habilidades Demonstradas
+- Estatística descritiva aplicada a dados reais
+- Análise Exploratória de Dados (EDA)
+- Validação de métricas para dashboards
+- Construção de pipeline de dados (API → BigQuery)
+- Otimização de processamento com Parquet
+- Simplificação de problemas analíticos
   
 ## Objetivo:
 Disponibilizar os dados em cloud para ingestão mensal e investigar os atendimentos de 2025, garantindo qualidade dos dados e consistência estatística dos seguintes indicadores: 
