@@ -1,6 +1,16 @@
 # Análise Exploratória de Dados dos Atendimentos da Conta Gov.br (2025)
 Investigação estatística do volume de solicitações e da distribuição do tempo de atendimento a partir de dados públicos da central Gov.br.
 
+## Resumo
+Este projeto realiza uma Análise Exploratória de Dados (EDA) dos atendimentos da conta Gov.br em 2025, com foco na validação de métricas operacionais e entendimento do comportamento do tempo de atendimento.
+
+Principais resultados:
+- 99,86% dos atendimentos têm origem em Facematch
+- Taxa média de aceitação: 73,88%
+- Identificação de cauda longa no tempo de atendimento (outliers relevantes)
+- Picos de duração em períodos específicos (março e agosto)
+
+Tecnologias: Python, BigQuery, SQL
 Autor: Jorge Gabriel
 
 Foco em:
