@@ -129,9 +129,13 @@ Os atendimentos iniciados à noite têm maiores durações que os demais.
 Os finais de semana têm maior mediana de duração de atendimento, sendo acima de 10h, com ênfase para os atendimentos iniciados aos Domingos, quando atingem 25h de duração mediana, sugerindo possíveis diferenças de capacidade operacional nesses períodos.
 
 ## Conclusões
+Neste projeto exercitei conversão de dados e carga com ingestão via API, utilizando python e SQL. A técnica de amostragem aleatória, além de necessária para manter consistência estatística, foi fundamental para movimentar a base sem perder performance computacional ou precisar de ferramentas pagas.
 
+A dificuldade  maior, inicialmente, foi descobrir como fazer a carga de todos os arquivos mensais. A conversão para parquet foi fundamental, permitindo carregar os dados em loop pela Google Cloud API.
 
- 
+Então, se você precisa montar um ambiente em cloud a partir de arquivos com grandes volumes, acredito que este projeto pode ser relevante. Essa análise exploratória, que é fase necessária para qualquer projeto, também seguiu uma metodologia que usa ferramentas simples da estatística descritiva, mas possibilitou descobrir informações poderosas e consistentes sobre a base de dados, demonstrando que técnicas mais simples, muitas vezes, podem ser as ideais para solucionar problemas de análise. 
+
+Portanto, com uma boa análise exploratória podemos descrever o comportamento da base de dados, encontrar padrões no fenômemo analisado e desenvolver métricas com validação estatística. É nessa fase que definimos a estrutura dos dados e se temos todas as informações necessárias à disposição para resolver o problema proposto.
 
 ## Possíveis extensões do projeto:
 
