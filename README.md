@@ -15,7 +15,9 @@ Autor: Jorge Gabriel
 
 ## Objetivo:
 Disponibilizar os dados em cloud para ingestão mensal e investigar os atendimentos de 2025, garantindo qualidade dos dados e consistência estatística dos seguintes indicadores: 
+
 a) volume de solicitações; 
+
 b) tempo de atendimento.
 
 ## Habilidades Demonstradas
