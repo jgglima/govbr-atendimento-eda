@@ -1,4 +1,4 @@
-# Análise de volume e tempo de atendimento da Conta Gov.br
+# Análise de volume e tempo de atendimento da conta Gov.br
 Investigação estatística do volume de solicitações e da distribuição do tempo de atendimento a partir de dados públicos da central Gov.br.
 
 ## Resumo
