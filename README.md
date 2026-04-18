@@ -35,7 +35,7 @@ https://dados.gov.br/dados/conjuntos-dados/atendimentos-realizados-na-central-de
 - Download CSV mensal
 - Conversão para Parquet reduzindo tamanho dos dados sem perdas (PyArrow)
 - Envio para o BigQuery via Google Cloud API
-- Full Load em tabela particionada por mês
+- Load em tabela particionada por mês
 - Consulta e amostragem aleatória (SQL)
 - Python (EDA)
   
