@@ -1,4 +1,4 @@
-# Análise Exploratória de Dados dos Atendimentos da Conta Gov.br utilizando Python e BigQuery
+# Análise de volume e tempo de atendimento da Conta Gov.br
 Investigação estatística do volume de solicitações e da distribuição do tempo de atendimento a partir de dados públicos da central Gov.br.
 
 ## Resumo
