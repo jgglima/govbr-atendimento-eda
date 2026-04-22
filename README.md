@@ -72,8 +72,7 @@ Reduzir custo computacional e acelerar análise exploratória, mantendo represen
 ### Google Cloud
 - Google BigQuery, Google Cloud API 
 
-## Processo de Análise
-Etapas realizadas na análise:
+## Etapas de Análise
 1. Descrição dos dados e verificação de types;
 2. Padronização de nomes das variáveis em camelCase;
 3. Verificação de dados nulos;
